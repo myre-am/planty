@@ -14,7 +14,7 @@
         <?php if (get_theme_mod('logo')) : ?>
             <img src="<?php echo esc_url(get_theme_mod('logo')); ?>" alt="Logo du site">
         <?php else : ?>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo1.jpg" alt="Logo du site Planty" class="logo">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo.jpg" alt="Logo du site Planty" class="logo">
         <?php endif; ?>
         </a>
     </div>  

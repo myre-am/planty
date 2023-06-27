@@ -5,6 +5,7 @@ function theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
+    wp_enqueue_style('formulaire-style', get_stylesheet_directory_uri() . '/css/formulaire.css', array(), filemtime(get_stylesheet_directory() . '/css/formulaire.css'));
 }
 
 function theme_customizer_logo($wp_customize) {
@@ -20,4 +21,14 @@ function theme_customizer_logo($wp_customize) {
         'settings' => 'logo',
     )));
 }
-add_action('customize_register', 'theme_customizer_logo');
+
+add_filter('wp_nav_menu_items', 'custom_menu_items', 10, 2);
+
+function custom_menu_items($items, $args) {
+    var_dump($args);
+    if (is_user_logged_in() && $args->theme_location == 'main-menu' ) { 
+        $items .= '<li class="admin-link"><a href="' . admin_url() . '">Admin</a></li>';
+        
+    }
+    return $items;
+}

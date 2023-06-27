@@ -1,0 +1,52 @@
+/* Style personalisé pour le formulaire de contact */
+
+.wpcf7  {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.wpcf7-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;   
+}
+
+textarea {
+    height: 170px;
+  
+}
+
+input[type="text"],
+input[type="email"],
+textarea 
+{
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+input[type="submit"] {
+    border-radius: 3px;
+    width: 50%;
+    border: none;
+    padding: 17px;
+    margin-left: 65px;
+    background-color: #E0B9B4;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #C02E44;
+    cursor: pointer;
+}
+.wpcf7-form-control {
+    margin-top: 10px;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.wpcf7-form textarea:focus {
+  outline: none;
+}

@@ -20,25 +20,42 @@ body * {
     flex-direction: row;
     font-size: 20px;
     font-family: 'Syne';
-    
-    
+    align-items: center;
+    outline: none;
+     
  }
- .menu li:last-child {
+ .menu :nth-child(2) {
     border: 30px solid #DC9F96;
     padding: 10px;
     background-color: #DC9F96;
     color: white ;
-    
   }
-  .menu li:nth-child(1) {
+  .menu :nth-child(2):hover {
+   background-color: #C02E44;
+   border: 30px solid #C02E44;
+  }
+
+  
+  .menu li:nth-child(1),
+  .admin-link {
     margin-right: 20px ;
     color: black;
   }
 
   a {
     text-decoration: none;
+    
   }
 
   .menu a:visited {
    color: inherit;
  }
+.menu :nth-child(1) {
+   order: 1;
+}
+.menu :nth-child(2) {
+   order: 3;
+}
+.menu :nth-child(3) {
+   order: 2;
+}
