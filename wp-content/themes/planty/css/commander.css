@@ -1,0 +1,49 @@
+
+
+.counter-container  {
+    display: flex;
+    align-items: center;
+    border-radius: 6px ;
+    width: 82%;
+    height: 56px;
+    background-color: white;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+.counter-input {
+    display: flex;
+    font-size: 21px;
+    width: 44%;
+    height: 34px;
+    border: none;
+    outline: none;
+     
+    padding-bottom: 15px;
+}
+
+.first-button {
+    display: flex;
+    color: white;
+    width: 40px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 0 0;
+    background-color: #dc9f96;
+    border-bottom: 1px solid white;
+    margin-left: 13px;
+    margin-top: 1px;
+}
+.second-button {
+    display: flex;
+    color: white;
+    width: 40px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 5px 0;
+    background-color: #dc9f96;
+    margin-left: 13px;
+    margin-top: 1px;
+}
+

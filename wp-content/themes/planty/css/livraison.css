@@ -1,0 +1,41 @@
+.info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 41px;
+    color: white;
+    margin-left: 50px;
+}
+
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+.livraison {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+}
+
+.info-container input {
+    
+    width: 80%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.commander {
+    display: flex;
+    width: 91%;
+    justify-content: center;
+    margin-left: -1px;
+}
+.commander input[type="submit"]{
+    background-color: #E0B9B4;
+    width: 68%;
+    height: 50px;
+}
+.commander input[type="submit"]:hover {
+    background-color: #C02E44;
+}

@@ -17,14 +17,13 @@ textarea {
   
 }
 
-input[type="text"],
-input[type="email"],
-textarea 
+.wpcf7-form-control 
 {
     width: 90%;
     padding: 10px;
     border-radius: 8px;
     border: none;
+    margin-top: 10px;
 }
 
 input[type="submit"] {
@@ -41,12 +40,14 @@ input[type="submit"]:hover {
     background-color: #C02E44;
     cursor: pointer;
 }
-.wpcf7-form-control {
-    margin-top: 10px;
-}
+
 
 .wpcf7-form input[type="text"]:focus,
 .wpcf7-form input[type="email"]:focus,
 .wpcf7-form textarea:focus {
   outline: none;
+}
+
+input[type=text] {
+    border-radius: 8px;
 }
