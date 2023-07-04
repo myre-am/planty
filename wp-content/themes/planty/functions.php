@@ -25,7 +25,6 @@ function theme_customizer_logo($wp_customize) {
 }
 
 add_filter('wp_nav_menu_items', 'custom_menu_items', 10, 2);
-
 function custom_menu_items($items, $args) {
     
     if (is_user_logged_in() && $args->theme_location == 'main-menu' ) { 
@@ -38,3 +37,9 @@ function custom_menu_items($items, $args) {
 add_action('wp_footer', 'add_mentions_legales');
 function add_mentions_legales() {}
 
+function wpmu_burger_menu_scripts() {
+	
+	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/burger-menu-script.js', array( 'jquery' ) );
+ 
+}
+add_action( 'wp_enqueue_scripts', 'wpmu_burger_menu_scripts' );

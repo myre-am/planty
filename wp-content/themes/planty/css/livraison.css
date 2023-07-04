@@ -39,3 +39,15 @@
 .commander input[type="submit"]:hover {
     background-color: #C02E44;
 }
+
+@media ( max-width: 500px){
+    .info-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:center ;    
+    }
+    .infos {
+        margin-left: 10px;
+    }
+}

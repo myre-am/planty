@@ -38,6 +38,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #C02E44;
+    ;
     cursor: pointer;
 }
 

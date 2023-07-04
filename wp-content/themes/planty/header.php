@@ -21,10 +21,10 @@
 <div id="branding">
 <div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
 </div>
-<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement" class="main-menu">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '', 'link_after' => '' ) ); ?>
-
+<a class="toggle-nav" href="#">&#9776;</a>
 </nav>
 </header>
 <div id="container">
-<main id="content" role="main">
+<main id="content" role="main"> 
