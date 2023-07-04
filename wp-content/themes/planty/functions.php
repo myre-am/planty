@@ -1,12 +1,17 @@
 <?php
+// Ajout des styles CSS ay thème
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+    //Style du thème
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
+    //Style du formulaire de contact
     wp_enqueue_style('formulaire-style', get_stylesheet_directory_uri() . '/css/formulaire.css', array(), filemtime(get_stylesheet_directory() . '/css/formulaire.css'));
+    //Style du formulaire de commande
     wp_enqueue_style('commander-style', get_stylesheet_directory_uri() . '/css/commander.css', array(), filemtime(get_stylesheet_directory() . '/css/commander.css'));
+    //Style de formulaire de livraison
     wp_enqueue_style('livraison-style', get_stylesheet_directory_uri() . '/css/livraison.css', array(), filemtime(get_stylesheet_directory() . '/css/livraison.css'));
 }
 
@@ -24,6 +29,7 @@ function theme_customizer_logo($wp_customize) {
     )));
 }
 
+//Ajout du hook admin
 add_filter('wp_nav_menu_items', 'custom_menu_items', 10, 2);
 function custom_menu_items($items, $args) {
     
@@ -34,9 +40,11 @@ function custom_menu_items($items, $args) {
     return $items;
 }
 
+//Ajout des mentions légales dans le footer
 add_action('wp_footer', 'add_mentions_legales');
 function add_mentions_legales() {}
 
+//Enregistre & charge le scrip du menu burger
 function wpmu_burger_menu_scripts() {
 	
 	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/burger-menu-script.js', array( 'jquery' ) );

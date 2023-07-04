@@ -2,6 +2,8 @@ body * {
     font-family: 'Syne', sans-serif;
  }
 
+ /****HEADER****/
+
  .logo {
     width: 200px;
     height: auto;
@@ -12,8 +14,7 @@ body * {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    
+    position: relative;   
  }
 
  .menu {
@@ -23,9 +24,9 @@ body * {
     font-family: 'Syne';
     align-items: center;
     outline: none;
-    gap: 40px;
-     
+    gap: 40px;    
  }
+
  .menu :nth-child(2) {
     border: 30px solid #DC9F96;
     padding: 10px;
@@ -34,12 +35,12 @@ body * {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .menu :nth-child(2):hover {
    background-color: #C02E44;
    border: 30px solid #C02E44;
   }
 
-  
   .menu li:nth-child(1),
   .admin-link {
     margin-right: 20px ;
@@ -47,14 +48,14 @@ body * {
   }
 
   a {
-    text-decoration: none;
-    
+    text-decoration: none;  
   }
 
   .menu a:visited {
-   color: inherit;
- }
-.menu :nth-child(1) {
+  color: inherit;
+  }
+
+ .menu :nth-child(1) {
    order: 1;
 }
 .menu :nth-child(2) {
@@ -64,7 +65,7 @@ body * {
    order: 2;
 }
 
-/****Footer****/
+/****FOOTER****/
 
 footer {
    display: flex;
@@ -78,6 +79,8 @@ footer {
 }
 
 
+/*****OMBRE PAGE D'ACCUEIL****/
+
 .shadow {
    width: 100%;
    height: 51px;
@@ -85,6 +88,8 @@ footer {
    border-radius: 0 0 70% 70%;
    box-shadow: 0px 5px 0px #E3D9d0;
 }
+
+/****MENU BURGER***/
 
 .toggle-nav {
    display: none !important;
