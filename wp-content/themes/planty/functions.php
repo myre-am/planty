@@ -15,6 +15,7 @@ function theme_enqueue_styles()
     wp_enqueue_style('livraison-style', get_stylesheet_directory_uri() . '/css/livraison.css', array(), filemtime(get_stylesheet_directory() . '/css/livraison.css'));
 }
 
+add_action('customize_register', 'theme_customizer_logo');
 function theme_customizer_logo($wp_customize) {
     // Paramètre pour le logo //
     $wp_customize->add_setting('logo', array(
