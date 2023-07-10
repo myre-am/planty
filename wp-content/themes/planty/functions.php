@@ -41,9 +41,6 @@ function custom_menu_items($items, $args) {
     return $items;
 }
 
-//Ajout des mentions légales dans le footer
-add_action('wp_footer', 'add_mentions_legales');
-function add_mentions_legales() {}
 
 //Enregistre & charge le scrip du menu burger
 function wpmu_burger_menu_scripts() {
@@ -52,3 +49,10 @@ function wpmu_burger_menu_scripts() {
  
 }
 add_action( 'wp_enqueue_scripts', 'wpmu_burger_menu_scripts' );
+
+function theme_register_nav_menus() {
+    register_nav_menus( array(
+      'footer_menu' => 'Menu du footer'
+    ));
+  }
+  add_action( 'after_setup_theme', 'theme_register_nav_menus' );

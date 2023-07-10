@@ -28,10 +28,10 @@ textarea {
 
 input[type="submit"] {
     border-radius: 3px;
-    width: 50%;
+    width: 64%;
     border: none;
     padding: 17px;
-    margin-left: 65px;
+    margin-left: 10px;
     background-color: #E0B9B4;
     color: white;
 }

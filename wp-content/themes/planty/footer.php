@@ -2,9 +2,15 @@
 
 </div>
 <footer id="footer" role="contentinfo">
-<div id="mentions-legales">
-        <a href="<?php echo esc_url( home_url( '/mentions-legales' ) ); ?>" class="mentions-legales">Mentions légales</a>
-    </div>
+<nav>
+    <?php
+      $args = array(
+        'theme_location' => 'footer_menu',
+        'menu_class' => 'footer-menu',
+      );
+      wp_nav_menu($args);
+    ?>
+  </nav>
 </footer>
 </div>
 <?php wp_footer(); ?>
